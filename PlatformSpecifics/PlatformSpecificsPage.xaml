@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:effects="clr-namespace:PlatformSpecifics.Effects"
+             x:Class="PlatformSpecifics.PlatformSpecificsPage"
+             Padding="20">
+    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+        <Label Text="Hi" HorizontalOptions="Center" FontSize="Large"/>
+        <Label Text="What's your name:" HorizontalOptions="Center" FontSize="Large">
+            <Label.Effects>
+                <effects:LightFontEffect />
+            </Label.Effects>
+        </Label>
+        <Entry Placeholder="Name" FontSize="Large">
+            <Entry.Effects>
+                <effects:LightFontEffect />
+            </Entry.Effects>
+        </Entry>
+    </StackLayout>
+</ContentPage>

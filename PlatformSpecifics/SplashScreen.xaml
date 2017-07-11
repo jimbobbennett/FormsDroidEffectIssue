@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatformSpecifics.SplashScreen" 
+             BackgroundColor="#FFFF7E00">
+    <!--<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,20,0,0" />
+            <On Platform="Android, Windows" Value="0,0,0,0" />
+        </OnPlatform>
+    </ContentPage.Padding>-->
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Welcome to:"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+            <Label Text="Adding platform specific magic to cross-platform Xamarin Forms apps"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Large"/>
+            <Image Source="Xamagon"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
